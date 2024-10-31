@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../imagenes/17be6a9a337f482b29de251652967b3a.jpg);
+}
+.contenedor {
+    margin: auto;
+    margin-top: 100px;
+    height: 600px;
+    width: 580px;
+    background-image: url(../imagenes/00fb6ba65cb65b726f49b56f9f94aaff\ \(1\).jpg);
+    /* background-color: rgb(136, 10, 10); */
+    justify-content: center;
+    align-items: center;
+border-radius: 40px;
+}
+
+.calculadora{
+    padding: 10px;
+    display: grid;
+    grid-template-areas:
+        "entrada entrada entrada entrada"
+        "ac ac dividir multiplicar"
+        "b9 b8 b7 restar"
+        "b6 b5 b4 sumar"
+        "b3 b2 b1 resultado"
+        "b0 b0 punto resultado";
+    gap: 10px;
+    /* border-radius: 10px; */
+}
+.entrada { grid-area: entrada; 
+margin-bottom: 60px;
+padding: 10px;
+font-size: 20px;
+border-radius: 50px;
+background-color: #5f5555;
+cursor: pointer;
+text-align: right;
+color: black;
+}
+.b0 { grid-area: b0;}
+.b1 { grid-area: b1;}
+.b2 { grid-area: b2; }
+.b3 { grid-area: b3; }
+.b4 { grid-area: b4; }
+.b5 { grid-area: b5; }
+.b6 { grid-area: b6; }
+.b7 { grid-area: b7; }
+.b8 { grid-area: b8; }
+.b9 { grid-area: b9; }
+.punto{ grid-area: punto;}
+.ac { grid-area: ac; }
+.sumar { grid-area: sumar; }
+.restar { grid-area: restar; }
+.multiplicar { grid-area: multiplicar; }
+.dividir { grid-area: dividir; }
+.resultado { grid-area: resultado; }
+
+.b0, .b1, .b2, .b3, .b4, .b5, .b6, .b7, .b8, .b9, .punto, .sumar, .restar, .multiplicar, .dividir, .resultado {
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #e2cfcf;
+    cursor: pointer;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    bottom: 40px;
+    color: white;
+  
+}
+
+.sumar, .restar, .multiplicar, .dividir, .resultado{
+background-color: chocolate;
+}
+.ac{
+    background-color: #ff6347;
+}
